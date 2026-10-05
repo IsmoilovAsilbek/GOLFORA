@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "DSBL";
+    src: url(DMSans-Black.ttf);
+}
+@font-face {
+    font-family: "DSB";
+    src: url(DMSans-Bold.ttf);
+}
+@font-face {
+    font-family: "DSEB";
+    src: url(DMSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "DSL";
+    src: url(DMSans-Light.ttf);
+}
+@font-face {
+    font-family: "DSM";
+    src: url(DMSans-Medium.ttf);
+}
+@font-face {
+    font-family: "DSR";
+    src: url(DMSans-Regular.ttf);
+}
+@font-face {
+    font-family: "DSSB";
+    src: url(DMSans-SemiBold.ttf);
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Club</title>
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+<header class="header" id="home">
+    <nav class="nav">
+        <div class="nav-box container">
+            <a href="#home"><img src="img/Logo.png" alt="Golf Club logo" class="nav-box__img"></a>
+
+            <ul class="nav-box__list" id="menu">
+                <li><a href="#home" class="nav-list__link">Home</a></li>
+                <li><a href="#about" class="nav-list__link">About Us</a></li>
+                <li><a href="#store" class="nav-list__link">Store</a></li>
+                <li><a href="#events" class="nav-list__link">Blog</a></li>
+                <li><a href="#membership" class="nav-list__link">Events</a></li>
+                <li><a href="#contact" class="nav-list__link">Contact</a></li>
+            </ul>
+
+            <div class="nav-box__icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp icon"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#" aria-label="InVision"><i class="fa-brands fa-invision icon"></i></a>
+            </div>
+
+            <button class="nav-box__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <hr class="container">
+    </nav>
+
+    <div class="header-content">
+        <div class="header-content__inner container">
+            <h1 class="header-content__title">
+                <span class="hero-line"><span>Greetings</span></span>
+                <span class="hero-line"><span>from Our</span></span>
+                <span class="hero-line"><span>Golf Club</span></span>
+            </h1>
+            <p class="header-content__text">Begin your fitness journey now! Join us to achieve your health goals
+                with expert guidance and a supportive community.</p>
+            <div class="header-content__btns">
+                <a href="#membership" class="btn btn--lime">Become a member</a>
+                <a href="#about" class="btn btn--outline">Discover the club</a>
+            </div>
+        </div>
+
+        <div class="hero-ball" aria-hidden="true"></div>
+        <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </div>
+</header>
+
+<main>
+    <!-- STATS -->
+    <section class="stats" id="stats">
+        <div class="stats__grid container">
+            <div class="stats__item" data-reveal="up">
+                <b class="stats__num" data-count="18">0</b>
+                <span class="stats__label">Championship holes</span>
+            </div>
+            <div class="stats__item" data-reveal="up" data-delay="100">
+                <b class="stats__num" data-count="1200" data-suffix="+">0</b>
+                <span class="stats__label">Active members</span>
+            </div>
+            <div class="stats__item" data-reveal="up" data-delay="200">
+                <b class="stats__num" data-count="25">0</b>
+                <span class="stats__label">Years of history</span>
+            </div>
+            <div class="stats__item" data-reveal="up" data-delay="300">
+                <b class="stats__num" data-count="40" data-suffix="+">0</b>
+                <span class="stats__label">Tournaments a year</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+        <div class="about__grid container">
+            <div class="about__visual" data-reveal="left">
+                <i class="fa-solid fa-golf-ball-tee about__icon"></i>
+                <div class="about__badge">
+                    <b>25</b>
+                    <span>years on the green</span>
+                </div>
+            </div>
+
+            <div class="about__info" data-reveal="right">
+                <h2 class="title">A course built for every player</h2>
+                <p class="text">Since 2001 we have welcomed beginners, families and professionals to a course
+                    that rewards patience and skill. Our greenkeepers shape every fairway by hand, so each round
+                    feels fresh.</p>
+                <ul class="about__list">
+                    <li><i class="fa-solid fa-check"></i> Certified coaches for every level</li>
+                    <li><i class="fa-solid fa-check"></i> Floodlit driving range open until 22:00</li>
+                    <li><i class="fa-solid fa-check"></i> Clubhouse restaurant with views of the 18th hole</li>
+                </ul>
+                <a href="#store" class="btn btn--lime">See what we offer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span>Tee off</span><span>Fairway</span><span>Birdie</span><span>Green</span><span>Eagle</span><span>Clubhouse</span>
+            <span>Tee off</span><span>Fairway</span><span>Birdie</span><span>Green</span><span>Eagle</span><span>Clubhouse</span>
+        </div>
+    </div>
+
+    <!-- STORE / SERVICES -->
+    <section class="services section" id="store">
+        <div class="container">
+            <div class="section-head" data-reveal="up">
+                <h2 class="title">Everything for your game</h2>
+                <p class="text">From your first swing to your first tournament, we have the space and the people to
+                    help you improve.</p>
+            </div>
+
+            <div class="services__grid">
+                <article class="card" data-reveal="up">
+                    <i class="fa-solid fa-flag card__icon"></i>
+                    <h3 class="card__title">Championship course</h3>
+                    <p class="card__text">Eighteen holes, par 72, with four tee positions for every skill level.</p>
+                    <a href="#membership" class="card__link">Book a tee time <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="card" data-reveal="up" data-delay="100">
+                    <i class="fa-solid fa-person-chalkboard card__icon"></i>
+                    <h3 class="card__title">Golf academy</h3>
+                    <p class="card__text">One-to-one lessons and group clinics with PGA certified coaches.</p>
+                    <a href="#membership" class="card__link">Meet the coaches <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="card" data-reveal="up" data-delay="200">
+                    <i class="fa-solid fa-bag-shopping card__icon"></i>
+                    <h3 class="card__title">Pro shop</h3>
+                    <p class="card__text">Clubs, bags, apparel and club fitting from the leading brands.</p>
+                    <a href="#store" class="card__link">Browse the shop <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+                <article class="card" data-reveal="up" data-delay="300">
+                    <i class="fa-solid fa-utensils card__icon"></i>
+                    <h3 class="card__title">Clubhouse</h3>
+                    <p class="card__text">Breakfast, lunch and dinner served on a terrace above the course.</p>
+                    <a href="#contact" class="card__link">Reserve a table <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section class="plans section" id="membership">
+        <div class="container">
+            <div class="section-head" data-reveal="up">
+                <h2 class="title">Choose your membership</h2>
+                <p class="text">No joining fee this month. Cancel or switch plans at any time.</p>
+            </div>
+
+            <div class="plans__grid">
+                <article class="plan" data-reveal="up">
+                    <h3 class="plan__name">Silver</h3>
+                    <p class="plan__price">$49<span>/month</span></p>
+                    <ul class="plan__list">
+                        <li><i class="fa-solid fa-check"></i> Driving range access</li>
+                        <li><i class="fa-solid fa-check"></i> 4 rounds per month</li>
+                        <li><i class="fa-solid fa-check"></i> Member events</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline">Choose Silver</a>
+                </article>
+
+                <article class="plan plan--main" data-reveal="up" data-delay="120">
+                    <span class="plan__flag">Most popular</span>
+                    <h3 class="plan__name">Gold</h3>
+                    <p class="plan__price">$89<span>/month</span></p>
+                    <ul class="plan__list">
+                        <li><i class="fa-solid fa-check"></i> Unlimited rounds</li>
+                        <li><i class="fa-solid fa-check"></i> 2 coaching sessions a month</li>
+                        <li><i class="fa-solid fa-check"></i> Priority tee times</li>
+                        <li><i class="fa-solid fa-check"></i> 10% off in the pro shop</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--lime">Choose Gold</a>
+                </article>
+
+                <article class="plan" data-reveal="up" data-delay="240">
+                    <h3 class="plan__name">Platinum</h3>
+                    <p class="plan__price">$149<span>/month</span></p>
+                    <ul class="plan__list">
+                        <li><i class="fa-solid fa-check"></i> Everything in Gold</li>
+                        <li><i class="fa-solid fa-check"></i> Private locker</li>
+                        <li><i class="fa-solid fa-check"></i> Guest passes</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline">Choose Platinum</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="events section" id="events">
+        <div class="container">
+            <div class="section-head" data-reveal="up">
+                <h2 class="title">Upcoming tournaments</h2>
+                <p class="text">Sign up at the clubhouse or online. Spots fill up quickly.</p>
+            </div>
+
+            <div class="events__list">
+                <article class="event" data-reveal="left">
+                    <div class="event__date"><b>12</b><span>Nov</span></div>
+                    <div class="event__info">
+                        <h3 class="event__title">Autumn Cup</h3>
+                        <p class="event__text">Stableford format, open to all handicaps. Prizes for the top three.</p>
+                    </div>
+                    <span class="event__time"><i class="fa-regular fa-clock"></i> 08:00</span>
+                    <a href="#contact" class="btn btn--outline">Join</a>
+                </article>
+                <article class="event" data-reveal="left" data-delay="120">
+                    <div class="event__date"><b>26</b><span>Nov</span></div>
+                    <div class="event__info">
+                        <h3 class="event__title">Junior Open</h3>
+                        <p class="event__text">A friendly competition for players under 16, with coaches on every hole.</p>
+                    </div>
+                    <span class="event__time"><i class="fa-regular fa-clock"></i> 10:00</span>
+                    <a href="#contact" class="btn btn--outline">Join</a>
+                </article>
+                <article class="event" data-reveal="left" data-delay="240">
+                    <div class="event__date"><b>10</b><span>Dec</span></div>
+                    <div class="event__info">
+                        <h3 class="event__title">Winter Charity Day</h3>
+                        <p class="event__text">Four-ball scramble with dinner. All proceeds go to local schools.</p>
+                    </div>
+                    <span class="event__time"><i class="fa-regular fa-clock"></i> 09:30</span>
+                    <a href="#contact" class="btn btn--outline">Join</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="reviews section">
+        <div class="container reviews__box" data-reveal="zoom">
+            <i class="fa-solid fa-quote-left reviews__quote"></i>
+            <div class="reviews__slides" id="slides">
+                <blockquote class="review active">
+                    <p>I picked up a club for the first time here six months ago. My coach was patient and my
+                        handicap is already down to 24.</p>
+                    <footer><b>Daniel Moore</b> — Gold member</footer>
+                </blockquote>
+                <blockquote class="review">
+                    <p>The course is beautifully kept and never feels crowded. Our whole family joined within a
+                        month of the first visit.</p>
+                    <footer><b>Sofia Reyes</b> — Platinum member</footer>
+                </blockquote>
+                <blockquote class="review">
+                    <p>The clubhouse terrace after a round is the best part of my week. Great food and even better
+                        company.</p>
+                    <footer><b>James Whitfield</b> — Silver member</footer>
+                </blockquote>
+            </div>
+            <div class="reviews__dots" id="dots"></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta__box container" data-reveal="up">
+            <h2 class="cta__title">Ready to tee off?</h2>
+            <p class="cta__text">Book a free trial round and see the course for yourself.</p>
+            <a href="#contact" class="btn btn--dark">Book a free round</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="contact">
+    <div class="footer__top container">
+        <div class="footer__col footer__col--about">
+            <img src="img/Logo.png" alt="Golf Club logo" class="footer__logo">
+            <p class="footer__text">A community golf club for beginners, families and professionals. Open every day
+                of the year.</p>
+            <div class="footer__icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook icon"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp icon"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="#" aria-label="InVision"><i class="fa-brands fa-invision icon"></i></a>
+            </div>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Club</h4>
+            <ul class="footer__list">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#events">Tournaments</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__list footer__list--info">
+                <li><i class="fa-solid fa-location-dot"></i> 88 Fairway Road, Green Valley</li>
+                <li><i class="fa-solid fa-phone"></i> <a href="tel:+10000000000">+1 000 000 0000</a></li>
+                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@golfclub.com">hello@golfclub.com</a></li>
+                <li><i class="fa-regular fa-clock"></i> Daily 07:00 – 22:00</li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__text">Tournament dates and member offers, once a month.</p>
+            <form class="subscribe" id="subscribe" novalidate>
+                <input type="email" class="subscribe__input" placeholder="Your email" aria-label="Email" required>
+                <button type="submit" class="subscribe__btn" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <p class="subscribe__msg" id="subscribeMsg" role="status"></p>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-box">
+            <p>© 2026 Golf Club. All rights reserved.</p>
+            <p><a href="#">Privacy policy</a> · <a href="#">Terms</a></p>
+        </div>
+    </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+
+</html>
